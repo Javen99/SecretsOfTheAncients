@@ -527,7 +527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393789527}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -622,9 +622,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e7f2bbc01e8c74f9f9dfac95a487cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 10
-  height: 10
-  flootTile: {fileID: 3022207917727745478, guid: 80883b733045ac944b26368eba0608e3, type: 3}
+  RoomCount: 5
+  xBound: 30
+  yBound: 30
+  roomPrefabs:
+  - {fileID: 2698134498401055085, guid: 14ede8ec90c995b49886b11182847ac4, type: 3}
+  - {fileID: 5083675097343681252, guid: f7a5ee8418427be40bbd491c8b38007b, type: 3}
+  - {fileID: 976865632350564711, guid: 7be8821b7fd56724583f26f053ad6be2, type: 3}
+  - {fileID: 976865632350564711, guid: dcc5b14f7eeed9744ab01cf0ecb592fd, type: 3}
+  - {fileID: 784910471424073154, guid: be797d65632d76b418ff1c71db9a4dd1, type: 3}
+  - {fileID: 834494222527762289, guid: a17dd67a2a88caf4580772e48714c6d2, type: 3}
+  - {fileID: 716001689432808002, guid: 1bc2929909af09e4b8339cd8357c73d8, type: 3}
+  - {fileID: 8809400011819016684, guid: 0e5f5de52bc7baf4d84c30aa76e6db3b, type: 3}
+  corridor: {fileID: 2323368666482822433, guid: fc826a73b0052534c8ebee2f5fff10c8, type: 3}
+  corner: {fileID: 8492565260406215150, guid: 6dfa4090423b9154ea84548ce8eff749, type: 3}
+  tjunction: {fileID: 8492565260406215150, guid: 462cad2b0d8f14341a20b925e5dad974, type: 3}
 --- !u!1 &809329197
 GameObject:
   m_ObjectHideFlags: 0
