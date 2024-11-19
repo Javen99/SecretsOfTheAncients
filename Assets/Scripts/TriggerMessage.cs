@@ -1,12 +1,14 @@
-using System;
 using UnityEngine;
 
 public class TriggerMessage : MonoBehaviour
 {
+    [TextArea]
     public string messageText;
-    public float displayDuration = 3f;
+    public float displayDuration = 5f;
+    public string messageID;
 
     private MessageDisplay messageDisplay;
+    private bool messageShown = false;
     
     void Start()
     {
@@ -24,8 +26,9 @@ public class TriggerMessage : MonoBehaviour
         {
             // Call the ShowMessage method
             messageDisplay.ShowMessage(messageText, displayDuration);
+            messageShown = true;
             
-            // Optionally, destroy the trigger after activation
+            // Destroy the trigger after activation
             Destroy(gameObject);
         }
     }
